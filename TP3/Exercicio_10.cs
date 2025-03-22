@@ -1,16 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TP3
 {
-    public class Exercicio_10
+    // Classe que representa um círculo
+    public partial class Circulo
     {
-        public void Start()
-        {
+        public double Raio { get; set; }
+    }
 
-        }
+    // Classe que representa uma esfera
+    public partial class Esfera
+    {
+        public double Raio { get; set; }
     }
 }

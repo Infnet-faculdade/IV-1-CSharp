@@ -1,16 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System; // Importando o namespace necessário
 
-namespace TP3
+public class Exercicio_06
 {
-    public class Exercicio_06
-    {
-        public void Start()
-        {
+    private string nomeDoShow;
+    private double preco;
+    private int quantidadeDisponivel;
 
-        }
+    // Construtor
+    public Exercicio_06(string nomeDoShow, double preco, int quantidadeDisponivel)
+    {
+        this.nomeDoShow = nomeDoShow;
+        this.preco = preco;
+        this.quantidadeDisponivel = quantidadeDisponivel;
+    }
+
+    // Exibir informações
+    public void ExibirInformacoes()
+    {
+        Console.WriteLine($"Nome do Show: {nomeDoShow}");
+        Console.WriteLine($"Preço: R${preco}");
+        Console.WriteLine($"Quantidade Disponível: {quantidadeDisponivel} ingressos");
     }
 }

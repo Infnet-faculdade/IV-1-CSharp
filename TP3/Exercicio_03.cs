@@ -1,16 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System; // Adicione esta linha para poder usar o Console
 
-namespace TP3
+public class Exercicio_03
 {
-    public class Exercicio_03
-    {
-        public void Start()
-        {
+    public string nomeDoShow;
+    public double preco;
+    public int quantidadeDisponivel;
 
-        }
+    // Método para alterar o preço
+    public void AlterarPreco(double novoPreco)
+    {
+        preco = novoPreco;
+    }
+
+    // Método para alterar a quantidade disponível
+    public void AlterarQuantidade(int novaQuantidade)
+    {
+        quantidadeDisponivel = novaQuantidade;
+    }
+
+    // Método para exibir as informações
+    public void ExibirInformacoes()
+    {
+        Console.WriteLine($"Nome do Show: {nomeDoShow}");
+        Console.WriteLine($"Preço: R${preco}");
+        Console.WriteLine($"Quantidade Disponível: {quantidadeDisponivel} ingressos");
     }
 }
