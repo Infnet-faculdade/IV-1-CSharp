@@ -4,7 +4,7 @@ namespace AT
 {
     class Exercicio10
     {
-        static void Executar(string[] args)
+        public void Executar()
         {
             // Gerar um número aleatório entre 1 e 50
             Random random = new Random();

@@ -4,7 +4,7 @@ namespace AT
 {
     class Exercicio7
     {
-        static void Executar(string[] args)
+        public void Executar()
         {
             // Criando uma nova conta bancária
             ContaBancaria conta = new ContaBancaria("João Silva");

@@ -2,7 +2,7 @@
 
 class Exercicio3
 {
-    static void Executar()
+    public void Executar()
     {
         Console.WriteLine("Bem-vindo à Calculadora!");
 

@@ -5,9 +5,9 @@ namespace AT
 {
     class Exercicio12
     {
-        static string caminhoArquivo = "estoque.txt";
+        static string CAMINHO_ARQUIVO = "estoque.txt";
 
-        static void Executar(string[] args)
+        public void Executar()
         {
             while (true)
             {
@@ -32,7 +32,7 @@ namespace AT
                     decimal precoUnitario = decimal.Parse(Console.ReadLine());
 
                     // Salva o produto no arquivo
-                    using (StreamWriter sw = new StreamWriter(caminhoArquivo, true))
+                    using (StreamWriter sw = new StreamWriter(CAMINHO_ARQUIVO, true))
                     {
                         sw.WriteLine($"{nome},{quantidade},{precoUnitario:F2}");
                     }
@@ -42,9 +42,9 @@ namespace AT
                 else if (opcao == "2")
                 {
                     // Listar Produtos
-                    if (File.Exists(caminhoArquivo))
+                    if (File.Exists(CAMINHO_ARQUIVO))
                     {
-                        string[] linhas = File.ReadAllLines(caminhoArquivo);
+                        string[] linhas = File.ReadAllLines(CAMINHO_ARQUIVO);
 
                         if (linhas.Length == 0)
                         {

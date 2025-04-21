@@ -4,7 +4,7 @@ namespace AT
 {
     class Exercicio8
     {
-        static void Executar(string[] args)
+        public void Executar()
         {
             // Criando um objeto da classe Funcionario
             Funcionario funcionario = new Funcionario("Carlos Souza", "Desenvolvedor", 4000);

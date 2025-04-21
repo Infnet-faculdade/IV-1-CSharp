@@ -6,32 +6,10 @@ namespace AT
     // Classe Produto
     public class Exercicio9
     {
-        public string Nome { get; set; }
-        public int Quantidade { get; set; }
-        public decimal PrecoUnitario { get; set; }
-
-        // Construtor da classe Produto
-        public Produto(string nome, int quantidade, decimal precoUnitario)
-        {
-            Nome = nome;
-            Quantidade = quantidade;
-            PrecoUnitario = precoUnitario;
-        }
-
-        // Método para retornar os dados do produto como string formatada
-        public override string ToString()
-        {
-            return $"{Nome},{Quantidade},{PrecoUnitario:F2}";
-        }
-    }
-
-    // Classe ControleEstoqueArquivo
-    class ControleEstoqueArquivo
-    {
         static string caminhoArquivo = "estoque.txt";
 
         // Método Executar corrigido, com tipo de retorno 'void'
-        static void Executar(string[] args)
+        public void Executar()
         {
             while (true)
             {

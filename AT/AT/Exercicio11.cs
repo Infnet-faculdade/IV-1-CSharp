@@ -8,7 +8,7 @@ namespace AT
         // Caminho do arquivo onde os contatos serão armazenados
         static string caminhoArquivo = "contatos.txt";
 
-        static void Executar(string[] args)
+        public void Executar()
         {
             int opcao;
             do

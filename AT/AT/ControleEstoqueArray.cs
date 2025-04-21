@@ -2,23 +2,11 @@
 
 namespace AT
 {
-    public class Produto
-    {
-        public string Nome { get; set; }
-        public int Quantidade { get; set; }
-        public decimal PrecoUnitario { get; set; }
-
-        public Produto(string nome, int quantidade, decimal precoUnitario)
-        {
-            Nome = nome;
-            Quantidade = quantidade;
-            PrecoUnitario = precoUnitario;
-        }
-    }
+  
 
     class ControleEstoqueArray
     {
-        static void Main(string[] args)
+        public void Main()
         {
             Produto[] produtos = new Produto[5];
             int contador = 0;
